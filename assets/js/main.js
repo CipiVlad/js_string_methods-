@@ -102,3 +102,82 @@ document.write(myVar3 + "<br>");
 // lvl 1_7
 
 let text3 = "Sam is good at coding school";
+let bad = document.getElementById('bad');
+let tom = document.getElementById('tom');
+let tennis = document.getElementById('tennis');
+
+// console.log(text3.replace('good', 'bad'));
+bad = text3.replace('good', 'bad');
+document.getElementById("bad").innerHTML = bad;
+
+// console.log(text3.replace('Sam', 'Tom'));
+tom = text3.replace('Sam', 'Tom');
+document.getElementById("tom").innerHTML = tom;
+
+// console.log(text3.replace('school', 'tennis'));
+tennis = text3.replace('school', 'tennis');
+document.getElementById("tennis").innerHTML = tennis;
+
+
+
+// toLoverCase(), toUpperCase();
+// lvl 1_8
+
+let text4 = "Sam is going to coding school";
+console.log(text4.length);
+
+let UPPERCASE = text4.toUpperCase();
+document.getElementById('UPPERCASE').innerHTML = UPPERCASE;
+
+let lowercase = text4.toLowerCase();
+document.getElementById('lowercase').innerHTML = lowercase;
+
+// -----------------SAM is going to SCHOOL-----------------------------------------------
+
+let slice1 = text4.slice(0, 4);
+let upSlice1 = slice1.toUpperCase();
+
+let slice2 = text4.slice(4, 15);
+
+let slice3 = text4.slice(22, 29);
+let upSlice3 = slice3.toUpperCase();
+let phraseSaM = upSlice1 + slice2 + upSlice3;
+// console.log(phraseSaM);
+document.getElementById('phraseSaM').innerHTML = phraseSaM;
+
+
+
+// ------------------sam IS GOING TO school----------------------------------------------
+
+let slice4 = text4.slice(0, 4);
+let lowSlice4 = slice1.toLowerCase();
+console.log(lowSlice4);
+
+let slice5 = text4.slice(4, 15);
+upSlice5 = slice5.toUpperCase();
+console.log(upSlice5);
+
+let slice6 = text4.slice(23, 29);
+let lowSlice6 = slice3.toLowerCase();
+console.log(lowSlice6);
+
+let phrasesAm = lowSlice4 + upSlice5 + lowSlice6;
+console.log(phrasesAm);
+
+document.getElementById('phrasesAm').innerHTML = phrasesAm;
+
+// ------------------Sam Is Going To School----------------------------------------------
+
+// console.log(text4);
+let replaceText = "Sam Is Going To School";
+// console.log(replaceText);
+
+text4 = text4.replace(replaceText);
+console.log(replaceText);
+document.getElementById('replaceText').innerHTML = replaceText;
+
+
+// concat()
+// lvl1_9
+
+
