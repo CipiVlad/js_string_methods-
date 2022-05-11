@@ -177,7 +177,29 @@ console.log(replaceText);
 document.getElementById('replaceText').innerHTML = replaceText;
 
 
+
+
 // concat()
 // lvl1_9
 
+let t1 = "Sam is going to coding school";
+let t2 = "Tom";
+let t3 = "programming bike";
+let t4 = "and";
+// ----------------------------------------------------------------
 
+let firstLineSlice = t1.slice(0, 15) + t1.slice(22, 29) + " " + t4 + " to the movie theater";
+console.log(firstLineSlice);
+document.getElementById('movie').innerHTML = firstLineSlice;
+
+// --------------------------------------------------
+
+let secondLineSlice = t1.slice(0, 15);
+console.log(secondLineSlice + ` movie theater`);
+
+// -------------------------------------------------
+
+let thirdLindeSlice = t2 + " " + t4 + " " + t1.slice(0, 4) + " " + `are going to school`;
+console.log(thirdLindeSlice);
+
+// ------------------------------------------------
